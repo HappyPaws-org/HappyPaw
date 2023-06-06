@@ -11,7 +11,7 @@ import SitterSearch2 from "./pages/sitterSearch2/SitterSearch2";
 function App() {
   return (
     <div className="App">
-      {/* <Main /> */}
+      <Main />
       {/*  <Service /> */}
       {/* <SitterSearch1 /> */}
       {/* <SitterSearch2 /> */}

@@ -1,6 +1,7 @@
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import "./main.css";
+import ServiceCards from "../../components/service-card/ServiceCards";
 
 function Main() {
   return (
@@ -78,6 +79,7 @@ function Main() {
           </div>
         </section>
 
+        <ServiceCards />
         <section class="section2-services">
           <div class="container">
             <h2>Наши услуги</h2>
