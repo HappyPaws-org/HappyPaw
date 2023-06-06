@@ -19,8 +19,8 @@ const reviewSchema = new mongoose.Schema({
     unique: true,
   },
   userId: {
-    type: String,
+    type: String, 
   },
-}, { timestamps: true });
+}, { timestamps: true });   
 
 module.exports = mongoose.model('Review', reviewSchema);

@@ -9,16 +9,16 @@ router.post('/newReview', async (req, res) => {
         const reviewUnique = await Review.findOne({comment});
         if (reviewUnique) {
           res.status(400).json({ error: 'Review already exists' });
-        }
+        }  
       
         createdAt = new Date().toLocaleDateString();     
-
+         
         const review = await Review.create({
           createdAt, 
           userName, 
-          star, 
+          star,  
           comment, 
-          userId 
+          userId,
         });
         res.status(201).json({message: 'Review created successfully', review});
     } catch (error) {
